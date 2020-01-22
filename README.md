@@ -1,5 +1,5 @@
 # Docker Compose Express+MongoDB API boilerplate
-This is a simple boilerplate for helping you speed up Express+Mongo REST API env setup.
+This is a simple boilerplate for helping you speed up Express+Mongo API env setup.
 
 The project includes:
 -  `docker-compose.yml` file for booting up a Node and MongoDB containers
