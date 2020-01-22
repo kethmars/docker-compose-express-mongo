@@ -1,0 +1,24 @@
+version: "3.7"
+services:
+  my_service:
+    container_name: my_service
+    build: .
+    volumes:
+      - .:/usr/src/app
+    ports:
+      - "2525:2525"
+      - "5858:5858"
+    links:
+      - my_service_db
+    environment:
+      - dev=1
+      - db_service_name=my_service_db
+      - db_name=example_db
+      - db_retry_time=3000
+  my_service_db:
+    container_name: my_service_db
+    image: mongo
+    volumes:
+      - ./db:/data/db
+    ports:
+      - "27017:27017"

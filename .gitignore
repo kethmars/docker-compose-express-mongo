@@ -1,0 +1,6 @@
+.history
+node_modules
+data
+data/*
+db
+db/*
