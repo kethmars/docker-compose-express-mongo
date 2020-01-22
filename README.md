@@ -11,6 +11,7 @@ The project includes:
 
 ## How to run?
 - Have Docker Compose installed
+- Run `npm install`
 - Run `docker-compose up`
 - Project should be listening on port `2525`!
 
